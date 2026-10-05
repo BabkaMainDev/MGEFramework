@@ -15,7 +15,7 @@ Pen::Pen()
 	if(data)
 	{
 		data->Width = 0;
-		data->Col = Color(255, 255, 255);
+		data->Col = Color();
 	}
 }
 
