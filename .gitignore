@@ -66,3 +66,19 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+/.vs/MGEFramework/CopilotIndices/17.12.31.40377
+/.vs/MGEFramework/v17
+/Debug
+/Source/Core/.vs/CoreAPI
+/Source/Core/x64/Debug/CoreAPI.tlog
+/Source/Core/Debug
+/Source/Core/x64/Debug
+/Source/Math/.vs/MathModule
+/Source/Math/Debug
+/Source/Math/Release
+/Source/Math/x64/Debug/MathModule.tlog
+/Source/Window/.vs/WindowsAPI
+/Source/Window/Debug
+/Source/Window/x64/Debug
+/x64/Debug
+/.vs/MGEFramework/FileContentIndex
