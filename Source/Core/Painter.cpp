@@ -111,5 +111,5 @@ void Painter::SetPen(Pen InPen)
 {
     pen = InPen;
 
-    CurrentPen = CreatePen( PS_SOLID, pen.width(), RGB( (int)pen.color().GetR(), (int)pen.color().GetG(), (int)pen.color().GetB() ));
+    CurrentPen = CreatePen( PS_SOLID, pen.GetWidth(), RGB( (int)pen.GetColor().GetR(), (int)pen.GetColor().GetG(), (int)pen.GetColor().GetB() ));
 }

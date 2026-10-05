@@ -24,9 +24,9 @@ public:
 
 	virtual ~Pen();
 	
-	int	width() const				  { return data->Width; }
-    void setWidth( int w )			  { data->Width = w;    }
-    Color &color()      			  { return data->Col;   }
+	int	GetWidth() const			  { return data->Width; }
+    void SetWidth( int w )			  { data->Width = w;    }
+    Color &GetColor()      			  { return data->Col;   }
 private:
 	struct PenData : public SharedData
 	{
