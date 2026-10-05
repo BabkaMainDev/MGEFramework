@@ -7,10 +7,7 @@ struct Color
 {
 	Color(float R = 0, float G = 0, float B = 0, float A = MAX_COL_VAL)
 	{
-		SetR(R);
-		SetG(G);
-		SetB(B);
-		SetA(A);
+		SetRGBA(R, G, B, A);
 	}
 
 private:
@@ -23,6 +20,9 @@ public:
 	inline float GetG() { return G; }
 	inline float GetB() { return B; }
 	inline float GetA() { return A; }
+
+	inline void SetRGB(float R, float G, float B)           { SetR(R); SetG(G); SetB(B); }
+	inline void SetRGBA(float R, float G, float B, float A) { SetRGB(R, G, B);  SetA(A); }
 
 	inline void SetR(float Val) { if(Val >= MIN_COL_VAL && Val <= MAX_COL_VAL) R = Val; }
 	inline void SetG(float Val) { if(Val >= MIN_COL_VAL && Val <= MAX_COL_VAL) G = Val; }
