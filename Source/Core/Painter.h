@@ -31,6 +31,16 @@ public:
 	void SetPen( Pen InPen );
 
 	inline Pen GetPen()           { return pen;  };
+
+	COLORREF ToWinAPIRGB(Color InColor) const
+	{
+		return RGB((int)InColor.GetR(), (int)InColor.GetG(), (int)InColor.GetB());
+	}
+
+	Color ToColor(COLORREF Ref)
+	{
+		return Color(GetRValue(Ref), GetGValue(Ref), GetBValue(Ref));
+	}
 	//inline void SetPen(Pen InPen) { pen = InPen; };
 private:
 	Pen pen; // ne Pen tak kak compiler punch by belt

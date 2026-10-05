@@ -1,5 +1,7 @@
 #pragma once
 
+#include <windows.h>
+
 #define MIN_COL_VAL 0.0f
 #define MAX_COL_VAL 255.f
 

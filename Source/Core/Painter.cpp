@@ -60,7 +60,7 @@ void Painter::DrawRect(Color InColor, Rect InRect, Pen InPen)
 
 void Painter::FillRect(Color InColor, Rect InRect) // copy-past from void Painter::FillBackground(Color InColor, Rect InRect)
 {
-	HBRUSH Brush = CreateSolidBrush(RGB((int)InColor.GetR(), (int)InColor.GetG(), (int)InColor.GetB()));
+	HBRUSH Brush = CreateSolidBrush(ToWinAPIRGB(InColor));
 
     RECT WinRect;
 
@@ -85,7 +85,7 @@ void Painter::DrawText(const TCHAR *Text, Rect InRect, Color InColor)
 	WinRect.right  = InRect.Position.X + InRect.Dimensions.Width;
 	WinRect.bottom = InRect.Position.Y + InRect.Dimensions.Height;
 
-	::SetTextColor(DC, RGB((int)InColor.GetR(), (int)InColor.GetG(), (int)InColor.GetB()));
+	::SetTextColor(DC, ToWinAPIRGB(InColor));
 	::DrawText(DC, Text, -1, &WinRect, DT_LEFT | DT_TOP); // :: Inache pizdec!
 }
 
@@ -111,5 +111,5 @@ void Painter::SetPen(Pen InPen)
 {
     pen = InPen;
 
-    CurrentPen = CreatePen( PS_SOLID, pen.GetWidth(), RGB( (int)pen.GetColor().GetR(), (int)pen.GetColor().GetG(), (int)pen.GetColor().GetB() ));
+    CurrentPen = CreatePen( PS_SOLID, pen.GetWidth(), ToWinAPIRGB(InPen.GetColor()) );
 }
