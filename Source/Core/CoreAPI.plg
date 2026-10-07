@@ -6,23 +6,6 @@
 --------------------Configuration: CoreAPI - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\User\AppData\Local\Temp\RSP284F.tmp" with contents
-[
-/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /FR"Debug/" /Fp"Debug/CoreAPI.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
-"D:\TipoDuolingo\MGEFramework\Source\Core\Painter.cpp"
-"D:\TipoDuolingo\MGEFramework\Source\Core\Pen.cpp"
-]
-Creating command line "cl.exe @C:\Users\User\AppData\Local\Temp\RSP284F.tmp" 
-Creating command line "link.exe -lib /nologo /out:"Debug\CoreAPI.lib"  .\Debug\Application.obj .\Debug\Painter.obj .\Debug\Pen.obj "
-<h3>Output Window</h3>
-Compiling...
-Painter.cpp
-Skipping... (no relevant changes detected)
-Pen.cpp
-Creating library...
-Creating command line "bscmake.exe /nologo /o"Debug/CoreAPI.bsc"  .\Debug\Application.sbr .\Debug\Painter.sbr .\Debug\Pen.sbr"
-Creating browse info file...
-<h3>Output Window</h3>
 
 
 

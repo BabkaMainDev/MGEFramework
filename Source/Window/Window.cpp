@@ -5,9 +5,9 @@
 #include <windows.h>
 #include <tchar.h>
 #include <stdlib.h>
-#include "../Core/Painter.h"
-#include "../Core/Point.h"
-#include "../Core/Size.h"
+#include "Core/Painter.h"
+#include "Core/Point.h"
+#include "Core/Size.h"
 
 LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
 

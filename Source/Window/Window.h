@@ -10,7 +10,7 @@
 #endif // _MSC_VER > 1000
 
 #include "windows.h"
-#include "../Core/Color.h"
+#include "Core/Color.h"
 
 class Painter;
 
