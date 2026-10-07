@@ -8,8 +8,12 @@ enum BrushStyle
     None
 };
 
-struct Brush
+class Brush
 {
+	friend class Painter;
+
+	
+
     Color BrushColor;
     BrushStyle Style;
 };

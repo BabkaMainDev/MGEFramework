@@ -19,7 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Object.h" />
     <ClInclude Include="Source\SharedDataStructs.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Object.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
