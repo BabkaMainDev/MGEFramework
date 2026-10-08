@@ -83,10 +83,18 @@ LIB32=link.exe -lib
 # Begin Group "Source Files"
 
 # PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
+# Begin Source File
+
+SOURCE=.\Source\Object.cpp
+# End Source File
 # End Group
 # Begin Source File
 
-SOURCE=.\SharedDataStructs.h
+SOURCE=.\Source\Object.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Source\SharedDataStructs.h
 # End Source File
 # End Target
 # End Project

@@ -12,8 +12,9 @@ class Brush
 {
 	friend class Painter;
 
-	
-
-    Color BrushColor;
-    BrushStyle Style;
+	struct BrushData
+	{
+		Color BrushColor;
+		BrushStyle Style;
+	}* data;
 };
