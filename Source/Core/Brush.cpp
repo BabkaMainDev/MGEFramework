@@ -13,7 +13,7 @@ Brush::Brush()
 
 Brush::Brush( Brush& B )
 {
-	data = B.data;
+	data = B.data; 
 }
 
 Brush::Brush( Color InColor, BrushStyle Style )

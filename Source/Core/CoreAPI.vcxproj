@@ -130,6 +130,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
+    <ClCompile Include="Brush.cpp" />
     <ClCompile Include="EntryPoint.cpp" />
     <ClCompile Include="Painter.cpp" />
     <ClCompile Include="Pen.cpp" />
