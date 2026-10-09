@@ -89,6 +89,10 @@ SOURCE=.\Application.cpp
 # End Source File
 # Begin Source File
 
+SOURCE=.\Brush.cpp
+# End Source File
+# Begin Source File
+
 SOURCE=.\Painter.cpp
 # End Source File
 # Begin Source File

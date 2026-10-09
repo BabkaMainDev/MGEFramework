@@ -11,10 +11,11 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
+#include "Object.h"
 #include <SharedDataStructs.h>
 #include "Color.h"
 
-class Pen  
+class Pen : public Object
 {
 friend class Painter;
 public:

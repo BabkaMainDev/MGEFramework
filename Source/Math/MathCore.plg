@@ -6,11 +6,31 @@
 --------------------Configuration: MathCore - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
+Creating temporary file "C:\Users\User\AppData\Local\Temp\RSP4FE6.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /FR"Debug/" /Fp"Debug/MathCore.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\TipoDuolingo\MGEFramework\Source\Math\BooleanAlgebra.cpp"
+"D:\TipoDuolingo\MGEFramework\Source\Math\Combinatorika.cpp"
+"D:\TipoDuolingo\MGEFramework\Source\Math\MatematikaCore.cpp"
+]
+Creating command line "cl.exe @C:\Users\User\AppData\Local\Temp\RSP4FE6.tmp" 
+Creating command line "link.exe -lib /nologo /out:"Debug\MathCore.lib"  .\Debug\BooleanAlgebra.obj .\Debug\Combinatorika.obj .\Debug\Macros.obj .\Debug\MatematikaCore.obj .\Debug\UserValues.obj "
+<h3>Output Window</h3>
+Compiling...
+BooleanAlgebra.cpp
+d:\vs6_0\6.0\setup\vc98\include\xlocale(467) : warning C4506: no definition for inline function 'double __cdecl MatematikaCore::Abs(double)'
+Combinatorika.cpp
+D:\TipoDuolingo\MGEFramework\Source\Math\Combinatorika.cpp(35) : warning C4506: no definition for inline function 'double __cdecl MatematikaCore::Abs(double)'
+MatematikaCore.cpp
+Creating library...
+Creating command line "bscmake.exe /nologo /o"Debug/MathCore.bsc"  .\Debug\BooleanAlgebra.sbr .\Debug\Combinatorika.sbr .\Debug\Macros.sbr .\Debug\MatematikaCore.sbr .\Debug\UserValues.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
 
 
 
 <h3>Results</h3>
-MathCore.lib - 0 error(s), 0 warning(s)
+MathCore.lib - 0 error(s), 2 warning(s)
 </pre>
 </body>
 </html>
