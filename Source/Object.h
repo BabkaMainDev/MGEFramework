@@ -30,6 +30,8 @@ public:
 
 	static BaseColors Colors;
 
+	Object* Get() { return this; }
+
 	virtual ~Object();
 };
 

@@ -87,6 +87,10 @@ LIB32=link.exe -lib
 
 SOURCE=.\Source\Object.cpp
 # End Source File
+# Begin Source File
+
+SOURCE=.\Source\String.cpp
+# End Source File
 # End Group
 # Begin Source File
 
@@ -95,6 +99,10 @@ SOURCE=.\Source\Object.h
 # Begin Source File
 
 SOURCE=.\Source\SharedDataStructs.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Source\String.h
 # End Source File
 # End Target
 # End Project
