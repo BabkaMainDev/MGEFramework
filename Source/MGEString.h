@@ -15,6 +15,7 @@ public:
 	String();
 	virtual ~String();
 
+	char* len;
 };
 
 #endif // !defined(AFX_STRING_H__AF6B9D0A_55D6_4ED5_A36C_2AAE32103BBC__INCLUDED_)
