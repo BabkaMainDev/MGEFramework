@@ -10,10 +10,11 @@
 
 String::String()
 {
-
+	Size = 0;
+	Capacity = 0;
 }
 
 String::~String()
 {
-
+	delete Data;
 }
