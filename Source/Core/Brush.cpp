@@ -6,7 +6,7 @@ Brush::Brush()
 	if(data)
 	{
 		data->Reference();
-		data->BrushColor = Color(0,0,0);
+		data->BrushColor = Colors.Black;
 		data->Style = Solid;
 	}
 }

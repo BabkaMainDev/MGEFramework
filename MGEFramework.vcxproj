@@ -19,13 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\MGEString.h" />
     <ClInclude Include="Source\Object.h" />
     <ClInclude Include="Source\SharedDataStructs.h" />
-    <ClInclude Include="Source\String.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\MGEString.cpp" />
     <ClCompile Include="Source\Object.cpp" />
-    <ClCompile Include="Source\String.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
