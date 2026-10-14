@@ -30,7 +30,7 @@ public:
 	{
 		if (this == &other) return *this;
 
-		delete[] Data;
+		if(Data != 0) delete[] Data;
 
 		Size = other.Size;
 		Capacity = other.Capacity;
@@ -64,6 +64,13 @@ public:
 		}
 
 		Data[Size] = '\0';
+	}
+
+	String operator+(String& Other) const
+	{
+		String Result(*this);
+		Result += Other;
+		return Result;
 	}
 };
 
