@@ -74,6 +74,11 @@ public:
 		Result += Other;
 		return Result;
 	}
+
+	bool operator==(String& Other) const
+	{
+		return 0;
+	}
 };
 
 #endif // !defined(AFX_STRING_H__AF6B9D0A_55D6_4ED5_A36C_2AAE32103BBC__INCLUDED_)
