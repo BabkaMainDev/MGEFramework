@@ -16,7 +16,9 @@ String::String()
 
 String::String(char* InData)
 {
-	for (unsigned int i = 0; InData[i] != '\0'; i++)
+	unsigned int i = 0;
+
+	for (i = 0; InData[i] != '\0'; i++)
 	{
 		Size++;
 	}
@@ -24,7 +26,7 @@ String::String(char* InData)
 
 	Data = new char[Capacity];
 
-	for (unsigned int i = 0; i < Capacity; i++)
+	for (i = 0; i < Capacity; i++)
 	{
 		Data[i] = InData[i];
 	}

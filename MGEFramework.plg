@@ -6,20 +6,22 @@
 --------------------Configuration: MGEFramework - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\User\AppData\Local\Temp\RSP91B6.tmp" with contents
+Creating temporary file "C:\Users\User\AppData\Local\Temp\RSPBAE8.tmp" with contents
 [
 /nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"Debug/MGEFramework.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
-"D:\TipoDuolingo\MGEFramework\String.cpp"
+"D:\TipoDuolingo\MGEFramework\Source\MGEString.cpp"
 ]
-Creating command line "cl.exe @C:\Users\User\AppData\Local\Temp\RSP91B6.tmp" 
+Creating command line "cl.exe @C:\Users\User\AppData\Local\Temp\RSPBAE8.tmp" 
+Creating command line "link.exe -lib /nologo /out:"Debug\MGEFramework.lib"  .\Debug\Object.obj .\Debug\MGEString.obj "
 <h3>Output Window</h3>
 Compiling...
-String.cpp
+MGEString.cpp
+Creating library...
 
 
 
 <h3>Results</h3>
-String.obj - 0 error(s), 0 warning(s)
+MGEFramework.lib - 0 error(s), 0 warning(s)
 </pre>
 </body>
 </html>

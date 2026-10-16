@@ -50,7 +50,9 @@ public:
 		if (Data != 0) { delete[] Data; Data = 0; }
 		if (&other == this) return *this;
 
-		for (unsigned int i = 0; other.Data[i] != '\0'; i++)
+		unsigned int i; // C++ 98 gondon zastavil eto delat
+
+		for (i = 0; other.Data[i] != '\0'; i++)
 		{
 			Size++;
 		}
@@ -58,7 +60,7 @@ public:
 
 		Data = new char[Capacity];
 
-		for (unsigned int i = 0; i < Capacity; i++)
+		for (i = 0; i < Capacity; i++)
 		{
 			Data[i] = other.Data[i];
 		}
