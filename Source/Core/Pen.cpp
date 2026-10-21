@@ -12,10 +12,11 @@
 Pen::Pen()
 {
 	data = new PenData;
-	if(data)
+	if( data )
 	{
-		data->Width = 0;
+		data->Width = 8;
 		data->Col = Color();
+		data->Style = SolidLine;
 	}
 }
 
@@ -32,6 +33,29 @@ Pen::Pen( Color InColor, int InWidth )
 	{
 		data->Width = InWidth;
 		data->Col = InColor;
+		data->Style = SolidLine;
+	}
+}
+
+Pen::Pen( PenStyle S )
+{
+	data = new PenData;
+	if ( data )
+	{
+		data->Col = Color();
+		data->Width = 8;
+		data->Style = S;
+	}
+}
+
+Pen::Pen( Color InColor, int InWidth, PenStyle S )
+{
+	data = new PenData;
+	if (data)
+	{
+		data->Width = InWidth;
+		data->Col = InColor;
+		data->Style = S;
 	}
 }
 

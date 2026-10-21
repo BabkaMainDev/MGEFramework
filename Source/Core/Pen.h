@@ -15,6 +15,13 @@
 #include <SharedDataStructs.h>
 #include "Color.h"
 
+enum PenStyle
+{
+	NoPen,
+	SolidLine,
+	Dot
+};
+
 class Pen : public Object
 {
 friend class Painter;
@@ -22,16 +29,22 @@ public:
 	Pen();
 	Pen( Pen& P );
 	Pen( Color InColor, int InWidth );
+	Pen( PenStyle ); // poprobuyem bez nazv v .h
+	Pen( Color, int, PenStyle ); // rabotaen oxuenno tak chto continue bez nazv))))
 
 	virtual ~Pen();
 	
 	int	GetWidth() const			  { return data->Width; }
     void SetWidth( int w )			  { data->Width = w;    }
     Color &GetColor()      			  { return data->Col;   }
+
+	PenStyle GetStyle() const        { return data->Style; }
+	void SetStyle( PenStyle S )      { data->Style = S;    }
 private:
 	struct PenData : public SharedData
 	{
 		Color Col;
+		PenStyle Style;
 		int Width;
 	} *data;
 };

@@ -85,13 +85,17 @@ LIB32=link.exe -lib
 # PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
 # Begin Source File
 
-SOURCE=.\Source\Object.cpp
+SOURCE=.\Source\MGEString.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\Source\String.cpp
+SOURCE=.\Source\Object.cpp
 # End Source File
 # End Group
+# Begin Source File
+
+SOURCE=.\Source\MGEString.h
+# End Source File
 # Begin Source File
 
 SOURCE=.\Source\Object.h
@@ -99,10 +103,6 @@ SOURCE=.\Source\Object.h
 # Begin Source File
 
 SOURCE=.\Source\SharedDataStructs.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\Source\String.h
 # End Source File
 # End Target
 # End Project
