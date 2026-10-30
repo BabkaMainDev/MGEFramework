@@ -58,11 +58,11 @@ public:
         unsigned int OtherSize = Other.Size;
         unsigned int NewSize = Size + OtherSize;
         unsigned int NewCapacity = Capacity;
-		if(Size >= NewCapacity)
-		{
-			NewCapacity = (NewSize + 1) * 2;
-			Capacity = NewCapacity;
-		}
+
+        if (NewSize + 1 > NewCapacity)
+        {
+            NewCapacity = (NewSize + 1) * 2;
+        }
 
         char* NewData = new char[NewCapacity];
 
@@ -84,6 +84,7 @@ public:
 
         Data = NewData;
         Size = NewSize;
+        Capacity = NewCapacity;
 
         return *this;
     }

@@ -34,6 +34,19 @@ String::String(char* InData)
 	Data[Size] = '\0';
 }
 
+String::String(const String& Other)
+{
+	Size = Other.Size;
+	Capacity = Other.Capacity;
+
+	Data = new char[Capacity];
+
+	for (unsigned int i = 0; i <= Size; i++)
+	{
+		Data[i] = Other.Data[i];
+	}
+}
+
 String::~String()
 {
 	delete Data;
