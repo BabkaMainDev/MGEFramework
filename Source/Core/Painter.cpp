@@ -55,7 +55,18 @@ void Painter::FillBackground(Color InColor, Rect InRect)
 
 void Painter::DrawRect(Color InColor, Rect InRect, Pen InPen)
 {
+	HBRUSH Brush = CreateSolidBrush(ToWinAPIRGB(InColor));
 
+	RECT WinRect;
+
+	WinRect.left = InRect.Position.X;
+	WinRect.top = InRect.Position.Y;
+	WinRect.right = InRect.Position.X + InRect.Dimensions.Width;
+	WinRect.bottom = InRect.Position.Y + InRect.Dimensions.Height;
+
+	::DrawFocusRect(DC, &WinRect);
+
+	DeleteObject(Brush);
 }
 
 void Painter::FillRect(Color InColor, Rect InRect) // copy-past from void Painter::FillBackground(Color InColor, Rect InRect)
