@@ -25,6 +25,7 @@ public:
 	void FillRect(Color InColor, Rect InRect);
 	void FillBackground(Color InColor);
 	void FillBackground(Color InColor, Rect InRect);
+	void DrawFilledRect(Color, Color, Rect, Pen );
 	Painter(HDC InDC);
 	virtual ~Painter();
 

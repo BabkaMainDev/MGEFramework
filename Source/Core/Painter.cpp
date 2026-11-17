@@ -53,7 +53,14 @@ void Painter::FillBackground(Color InColor, Rect InRect)
     DeleteObject(Brush);
 }
 
-void Painter::DrawRect(Color InColor, Rect InRect, Pen InPen)
+void Painter::DrawFilledRect(Color RamochkaColor, Color BackroundColor, Rect InRect, Pen InPen)
+{
+	FillBackground(BackroundColor, InRect);
+	DrawRect(RamochkaColor, InRect, InPen);
+}
+
+// Kvadrat(rect) pustoy inside(ramochka blya)
+void Painter::DrawRect(Color InColor, Rect InRect, Pen InPen) // Kvadrat pustoy
 {
 	HBRUSH Brush = CreateSolidBrush(ToWinAPIRGB(InColor));
 
@@ -69,6 +76,7 @@ void Painter::DrawRect(Color InColor, Rect InRect, Pen InPen)
 	DeleteObject(Brush);
 }
 
+// Rect zapolnenit no bez ramki
 void Painter::FillRect(Color InColor, Rect InRect) // copy-past from void Painter::FillBackground(Color InColor, Rect InRect)
 {
 	HBRUSH Brush = CreateSolidBrush(ToWinAPIRGB(InColor));
