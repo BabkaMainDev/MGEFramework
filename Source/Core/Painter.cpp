@@ -62,18 +62,23 @@ void Painter::DrawFilledRect(Color RamochkaColor, Color BackroundColor, Rect InR
 // Kvadrat(rect) pustoy inside(ramochka blya)
 void Painter::DrawRect(Color InColor, Rect InRect, Pen InPen) // Kvadrat pustoy
 {
-	HBRUSH Brush = CreateSolidBrush(ToWinAPIRGB(InColor));
+	HPEN PenHandle = CreatePen( InPen.GetStyle(), InPen.GetWidth(), ToWinAPIRGB(InColor) );
 
-	RECT WinRect;
+	HGDIOBJ OldPen = SelectObject(DC, PenHandle);
+	HGDIOBJ OldBrush = SelectObject(DC, GetStockObject(NULL_BRUSH));
 
-	WinRect.left = InRect.Position.X;
-	WinRect.top = InRect.Position.Y;
-	WinRect.right = InRect.Position.X + InRect.Dimensions.Width;
-	WinRect.bottom = InRect.Position.Y + InRect.Dimensions.Height;
+	::Rectangle(
+		DC,
+		InRect.Position.X,
+		InRect.Position.Y,
+		InRect.Position.X + InRect.Dimensions.Width,
+		InRect.Position.Y + InRect.Dimensions.Height 
+	);
 
-	::DrawFocusRect(DC, &WinRect);
+	SelectObject(DC, OldBrush);
+	SelectObject(DC, OldPen);
 
-	DeleteObject(Brush);
+	DeleteObject(PenHandle);
 }
 
 // Rect zapolnenit no bez ramki
